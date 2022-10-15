@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const prenderLadrao_1 = require("./src/prenderLadrao");
+const GeradorMissoes_1 = require("./src/Classes/GeradorMissoes");
+const gerarMissao = new GeradorMissoes_1.GeradorMissoes([]);
+gerarMissao.enviaPerguntas(prenderLadrao_1.opcoesSuspeitos.primeiro);
+gerarMissao.enviaPerguntas(prenderLadrao_1.opcoesSuspeitos.segunda);
+gerarMissao.enviaPerguntas(prenderLadrao_1.opcoesSuspeitos.terceiro);
+gerarMissao.enviaPerguntas(prenderLadrao_1.opcoesSuspeitos.quarto);
+gerarMissao.iniciarJogo();
